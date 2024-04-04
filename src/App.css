@@ -1,17 +1,16 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
+/* App.css */
 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
+/* Remove align-items: left; from app-container to prevent items from shifting left */
 .app-container {
   text-align: center;
   padding: 20px;
   display: flex;
-  align-items: left;
+  /* align-items: left; */
   flex-direction: column;
 }
 
@@ -20,14 +19,13 @@ body {
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
-  justify-content:space-evenly
-
+  justify-content: space-evenly; /* Fixed typo in justify-content */
 }
-.icon{
+
+.icon {
   height: 5rem;
   width: 5rem;
 }
-
 
 .title {
   margin: 0;
@@ -38,96 +36,29 @@ body {
 
 .pasta-display {
   display: flex;
+  /* Ensure pasta menu takes up full width */
+  flex: 1;
 }
 
 .menu-container {
-  width: 70%; /* Adjust the width as needed */
+  width: 70%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Display cards in three columns */
-  gap: 20px; /* Add gap between cards */
-}
-
-.sidebar {
-  width: 20%; /* Adjust the width as needed */
-  padding: 10px;
-  position: sticky;
-  top: 20px; /* Adjust the distance from the top as needed */
-  height: 100vh; /* Adjust the height to fill the viewport */
+  grid-template-columns: repeat(4, 1fr); /* Display cards in four columns */
+  gap: 25px; /* Add gap between cards */
   
 }
 
-
-
-.card {
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-  width: 18rem;
+.sidebar {
+  width: 20%;
+  padding: 10px;
+  position: sticky;
+  top: 20px;
+  height: 100vh;
 }
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  height: 200px; /* Adjust the height as needed */
-
-}
-
-.card-content {
-  padding: 20px;
-}
-
-.card-title {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 1.5rem;
-  color: #343a40;
-}
-
-.card-description {
-  margin: 0;
-  color: #6c757d;
-}
-
-.card-price {
-  margin-top: 10px;
-  font-weight: bold;
-  color: #007bff;
-}
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #0056b3;
-}
-
 
 .title {
   font-size: 3rem;
   font-family: 'Pacifico', cursive;
-  /* Additional styling for the header title */
 }
 
 .main-container {
@@ -135,141 +66,19 @@ body {
   flex-direction: row;
 }
 
-
-
-.sidebar {
-  text-align: justify;
-  width: 120px; /* Adjust the width as needed */
-  margin-left: 20px;
-  padding: 10px;
-  position: sticky;
-  top: 20px; /* Adjust the distance from the top as needed */
-}
-
-.sidebar-title {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.favorites-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.favorites-list li {
-  margin-bottom: 5px;
-  font-size: 16px;
-}
-
-.favorite-button {
-  font-size: 24px; /* Make the star bigger */
-  background-color: transparent; /* Remove background color */
-  border: none; /* Remove border */
-  padding: 0; /* Remove padding */
-  cursor: pointer; /* Change cursor to pointer */
-}
-
-.favorite-button:focus {
-  outline: none; /* Remove focus outline */
-}
-
-.favorite-button:hover {
-  color: goldenrod; /* Change color on hover */
-}
-
-.dropdown-toggle {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  background-color: #fff;
-}
-
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  float: left;
-  min-width: 10rem;
-  padding: 0.5rem 0;
-  margin: 0.125rem 0 0;
-  font-size: 1rem;
-  color: #212529;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
-}
-
-.dropdown-menu.show {
-  display: block;
-}
-
-.dropdown-item {
-  display: block;
-  width: 100%;
-  padding: 0.25rem 1.5rem;
-  clear: both;
-  font-weight: 400;
-  color: #212529;
-  text-align: inherit;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 0;
-}
-
-.dropdown-item:focus,
-.dropdown-item:hover {
-  color: #16181b;
-  background-color: #f8f9fa;
-  text-decoration: none;
-}
-
-.sort-button {
-  background-color: #1e86f6;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  margin: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: none;
-  height:2.5rem;
-}
-
-.sort-button.asc::after {
-  content: " ▲";
-}
-
-.sort-button.desc::after {
-  content: " ▼";
-}
-
-.options{
+.options {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content:flex-end;
   align-items: center;
 }
 
-.pasta-display  {
+.pasta-display {
   display: flex;
   flex-direction: column;
 }
 
-.remove-button {
-  background: none;
-  border: none;
-  color: red;
-  cursor: pointer;
-  font-size: 1.5rem;
+/* Ensure sidebar maintains its size when no cards are present */
+.menu-container:empty {
+  display: flex;
 }
-
-.remove-button:hover {
-  color: darkred;
-}
-

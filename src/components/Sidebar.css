@@ -1,0 +1,48 @@
+.sidebar {
+    text-align: justify;
+    width: 120px; /* Adjust the width as needed */
+    margin-left: 20px;
+    padding: 10px;
+    position: sticky;
+    top: 20px; /* Adjust the distance from the top as needed */
+  }
+  
+  .sidebar-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .favorites-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .favorites-list li {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  .favorite-button {
+    font-size: 24px; /* Make the star bigger */
+    background-color: transparent; /* Remove background color */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  .favorite-button:focus {
+    outline: none; /* Remove focus outline */
+  }
+  
+  .favorite-button:hover {
+    color: goldenrod; /* Change color on hover */
+  }
+  .remove-button {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  

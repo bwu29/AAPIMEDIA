@@ -2,18 +2,21 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import PastaCard from './components/PastaCard';
 import pastaData from './assets/pasta-data.json';
-import Dropdown from './components/Dropdown';
-import Sidebar from './components/Sidebar.jsx';
-import SortButton from './components/SortButton.jsx';
+import Sidebar from './components/Sidebar';
+import SortButton from './components/SortButton';
+import ResetButton from './components/ResetButton';
+import { CategoryDropdown, LengthDropdown } from './components/Dropdown';
 
 function App() {
   const [pastaShapes, setPastaShapes] = useState([]);
   const [favorites, setFavorites] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('All');
-  const [sortOrder, setSortOrder] = useState('asc');
+  const [selectedLength, setSelectedLength] = useState('All');
+  const [sortOrder, setSortOrder] = useState();
   const [filteredAndSortedPastaShapes, setFilteredAndSortedPastaShapes] = useState([]);
+  const originalOrder = pastaData.slice(); // Copy original data
 
-  // Load pasta data
+  /// Load pasta data
   useEffect(() => {
     setPastaShapes(pastaData);
   }, []);
@@ -31,18 +34,29 @@ function App() {
     setFavorites(favorites.filter((item) => item !== title));
   };
 
-  // Filter and sort pasta shapes based on category and sort order
+  // Filter and sort pasta shapes based on category, length, and sort order
   useEffect(() => {
-    let filteredShapes = pastaShapes.filter((shape) => selectedCategory === 'All' || shape.category === selectedCategory);
-    filteredShapes.sort((a, b) => {
-      if (sortOrder === 'asc') {
-        return a.title.localeCompare(b.title);
-      } else {
-        return b.title.localeCompare(a.title);
-      }
-    });
+    let filteredShapes = pastaShapes.filter((shape) =>
+      (selectedCategory === 'All' || shape.category === selectedCategory) &&
+      (selectedLength === 'All' || shape.length === selectedLength)
+    );
+
+    // Check if sort order is specified, otherwise maintain original order
+    if (sortOrder === 'asc') {
+      filteredShapes.sort((a, b) => a.title.localeCompare(b.title));
+    } else if (sortOrder === 'desc') {
+      filteredShapes.sort((a, b) => b.title.localeCompare(a.title));
+    }
+
     setFilteredAndSortedPastaShapes(filteredShapes);
-  }, [pastaShapes, selectedCategory, sortOrder]);
+  }, [pastaShapes, selectedCategory, selectedLength, sortOrder]);
+
+  const handleReset = () => {
+    setSelectedCategory('All');
+    setSelectedLength('All');
+    setSortOrder(); // Reset sort order
+    setPastaShapes(pastaData); // Reset pasta shapes to original order
+  };
 
   return (
     <div className="app-container">
@@ -54,8 +68,10 @@ function App() {
       <div className="main-container">
         <div className="pasta-display">
           <div className="options">
-            <Dropdown onSelect={setSelectedCategory} selectedCategory={selectedCategory} />
+            <LengthDropdown onSelect={setSelectedLength} selectedLength={selectedLength} />
+            <CategoryDropdown onSelect={setSelectedCategory} selectedCategory={selectedCategory} />
             <SortButton sortOrder={sortOrder} handleSort={() => setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc')} />
+            <ResetButton handleReset={handleReset} />
           </div>
 
           <div className="menu-container">

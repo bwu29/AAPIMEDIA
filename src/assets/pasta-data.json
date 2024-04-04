@@ -3,90 +3,105 @@
     "title": "Spaghetti",
     "image": "https://media.istockphoto.com/id/1096157720/photo/dry-spaghetti-pastas.jpg?s=612x612&w=0&k=20&c=FvLP5kxjs3q9awjOrvcuQw_ZOKpAnsKjLhFhpuYDzXs=",
     "description": "Classic long, thin pasta shape.",
-    "category": "Long Pasta"
+    "length": "Long",
+    "category": "None"
   },
   {
     "title": "Fettuccine",
     "image": "https://img.freepik.com/premium-photo/raw-fettuccine-pasta-isolated-white-background-as-package-design-element_128711-10628.jpg",
     "description": "Flat pasta ribbons.",
-    "category": "Long Pasta"
+    "length": "Long",
+    "category": "Ribbon"
   },
   {
     "title": "Penne",
     "image": "https://media.istockphoto.com/id/495231784/photo/penne-pasta.jpg?s=612x612&w=0&k=20&c=s6i39tglMyw0sQVsJtZlYSxINgrfoMW8ACg0gS_1tuw=",
     "description": "Tubular pasta shape.",
-    "category": "Short Pasta"
+    "length": "Short",
+    "category": "Tube"
   },
   {
     "title": "Ravioli",
     "image": "https://img.freepik.com/premium-photo/italian-ravioli-isolated-white-background-dry-uncooked-pasta_969312-347.jpg",
     "description": "Stuffed pasta pockets.",
-    "category": "Stuffed Pasta"
+    "length": "Short",
+    "category": "Stuffed"
   },
   {
     "title": "Tortellini",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIKwUh3DtQfHeDYaA5SwBLArD4a5XdBm-JLTXuInjtbg&s",
     "description": "Ring-shaped stuffed pasta.",
-    "category": "Stuffed Pasta"
+    "length": "Short",
+    "category": "Stuffed"
   },
   {
     "title": "Fusilli",
     "image": "https://previews.123rf.com/images/maksvil/maksvil1801/maksvil180100135/93723985-uncooked-fusilli-pasta-noodles-isolated-on-white-background.jpg",
     "description": "Corkscrew-shaped pasta.",
-    "category": "Short Pasta"
+    "length": "Short",
+    "category": "None"
   },
   {
     "title": "Cavatappi",
     "image": "https://img.freepik.com/premium-photo/raw-yellow-cavatappi-pasta-isolated_162695-1204.jpg?w=1800",
     "description": "Spiral-shaped pasta.",
-    "category": "Short Pasta"
+    "length": "Short",
+    "category": "None"
   },
   {
     "title": "Rigatoni",
     "image": "https://t4.ftcdn.net/jpg/00/52/08/27/360_F_52082762_eAAqcLXbUymIEikFxn8RzbUE6sCnBzjf.jpg",
     "description": "Short, wide, tube-shaped pasta.",
-    "category": "Short Pasta"
+    "length": "Short",
+    "category": "Tube"
   },
   {
     "title": "Linguine",
     "image": "https://media.istockphoto.com/id/185211679/photo/standing-spaghetti.jpg?s=612x612&w=0&k=20&c=KxQPQjvWIu_RUFjhnY1umtugD6i8up6n1zBMTqbgfjc=",
     "description": "Long, flat pasta.",
-    "category": "Long Pasta"
+    "length": "Long",
+    "category": "None"
   },
   {
     "title": "Farfalle",
     "image": "https://media.istockphoto.com/id/469108607/photo/farfalle-uncooked-pasta-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=eFeR7qBO6rjvceh0Hukh3JG17JAznz67aO89FOPeIBk=",
     "description": "Bow-tie shaped pasta.",
-    "category": "Short Pasta"
+    "length": "Short",
+    "category": "None"
   },
   {
     "title": "Pappardelle",
     "image": "https://www.doughandgrocer.com/wp-content/uploads/pappardelle3.jpg",
     "description": "Wide, flat pasta.",
-    "category": "Long Pasta"
+    "length": "Long",
+    "category": "None"
   },
   {
     "title": "Conchiglie",
     "image": "https://t3.ftcdn.net/jpg/02/02/88/94/360_F_202889405_Gr1AjMG6OVwg9I1dyDdrYmr8zgvq0xj7.jpg",
     "description": "Shell-shaped pasta.",
-    "category": "Short Pasta"
+    "length": "Short",
+    "category": "None"
   },
   {
     "title": "Lasagna",
     "image": "https://img.freepik.com/premium-photo/raw-lasagna-pasta-sheets-isolated-white-background-top-view_59529-1170.jpg",
     "description": "Flat pasta sheets.",
-    "category": "Long Pasta"
+    "length": "Long",
+    "category": "None"
   },
   {
     "title": "Rotelle",
     "image": "https://img.freepik.com/premium-photo/rotelle-pasta-glass-jar-isolated-white-background-high-quality-photo_311158-3197.jpg",
     "description": "Wheel-shaped pasta.",
-    "category": "Short Pasta"
+    "length": "Short",
+    "category": "None"
   },
   {
     "title": "Ziti",
     "image": "https://www.realsimple.com/thmb/IUWGYY3rS6MGpBm_oY_jBSdJQcM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/types-of-pasta-noodles-ziti-8ba5df7bae5f456bb5848521bc880c92.jpg",
     "description": "Short, smooth tube-shaped pasta.",
-    "category": "Short Pasta"
+    "length": "Short",
+    "category": "Tube"
   }
 ]

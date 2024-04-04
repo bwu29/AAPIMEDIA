@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import '../App.css';
+import './PastaCard.css';
 
 function PastaCard({ title, image, description, isFavorite, handleToggleFavorite, handleRemoveFavorite }) {
   return (

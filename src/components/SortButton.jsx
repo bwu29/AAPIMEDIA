@@ -1,4 +1,6 @@
 import React from 'react';
+import './SortButton.css';
+
 
 function SortButton({ sortOrder, handleSort }) {
   return (
