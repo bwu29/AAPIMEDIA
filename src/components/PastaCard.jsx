@@ -6,7 +6,7 @@ import './PastaCard.css';
 function PastaCard({ title, image, description, isFavorite, handleToggleFavorite, handleRemoveFavorite }) {
   return (
     <Card>
-      <Card.Img variant="top" src={image} alt= {title} uncooked displayed on white background className="card-image" />
+      <Card.Img variant="top" src={image} alt={`Raw ${title} displayed on white background`} className="card-image" />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>{description}</Card.Text>
@@ -15,7 +15,7 @@ function PastaCard({ title, image, description, isFavorite, handleToggleFavorite
             &#9733; {/* Filled star symbol */}
           </Button>
         ) : (
-          <Button variant="outline-warning" className="favorite-button" onClick={() => handleToggleFavorite(title)}>
+          <Button variant="outline-warning" className="favorite-button" aria-label='favorite button' onClick={() => handleToggleFavorite(title)}>
             &#9734; {/* Hollow star symbol */}
           </Button>
         )}

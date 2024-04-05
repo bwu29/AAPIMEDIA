@@ -1,16 +1,14 @@
-/* App.css */
 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-/* Remove align-items: left; from app-container to prevent items from shifting left */
+
 .app-container {
   text-align: center;
   padding: 20px;
   display: flex;
-  /* align-items: left; */
   flex-direction: column;
 }
 
@@ -19,7 +17,7 @@ body {
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; /* Fixed typo in justify-content */
+  justify-content: space-evenly; 
 }
 
 .icon {
@@ -36,15 +34,14 @@ body {
 
 .pasta-display {
   display: flex;
-  /* Ensure pasta menu takes up full width */
   flex: 1;
 }
 
 .menu-container {
   width: 70%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Display cards in four columns */
-  gap: 25px; /* Add gap between cards */
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 25px; 
   
 }
 
@@ -78,7 +75,7 @@ body {
   flex-direction: column;
 }
 
-/* Ensure sidebar maintains its size when no cards are present */
+/* ensures sidebar maintains shape when menu is empty*/
 .menu-container:empty {
   display: flex;
 }
