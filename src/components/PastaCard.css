@@ -1,5 +1,5 @@
 .card {
-    background-color: #fcf9f9;
+    background-color: #f8f1f1;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -17,7 +17,7 @@
     object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    height: 200px; /* Adjust the height as needed */
+    height: 200px; 
   }
   
   .card-content {

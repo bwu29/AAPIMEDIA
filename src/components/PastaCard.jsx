@@ -6,7 +6,7 @@ import './PastaCard.css';
 function PastaCard({ title, image, description, isFavorite, handleToggleFavorite, handleRemoveFavorite }) {
   return (
     <Card>
-      <Card.Img variant="top" src={image} alt={title} className="card-image" />
+      <Card.Img variant="top" src={image} alt= {title} uncooked displayed on white background className="card-image" />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>{description}</Card.Text>
