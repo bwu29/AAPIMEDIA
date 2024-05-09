@@ -1,13 +1,10 @@
-/* Sidebar.css */
 .sidebar {
-  text-align: left;
+  text-align: left; 
   width: 160px;
   margin-left: 20px;
   padding: 10px;
   position: sticky;
-  top: 20px;
-  /* Add transition for smooth animation */
-  transition: width 0.3s ease;
+  top: 20px; 
 }
 
 .sidebar-title {
@@ -22,20 +19,20 @@
 }
 
 .favorites-list li {
-  margin-bottom: 10px; /* Adjust spacing between list items */
+  margin-bottom: 5px;
   font-size: 16px;
 }
 
 .favorite-button {
-  font-size: 24px;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
+  font-size: 24px; 
+  background-color: transparent; 
+  border: none; 
+  padding: 0; 
+  cursor: pointer; 
 }
 
 .favorite-button:focus {
-  outline: none;
+  outline: none; 
 }
 
 .favorite-button:hover {
@@ -50,4 +47,3 @@
   cursor: pointer;
   font-size: 1.5rem;
 }
-

@@ -7,42 +7,72 @@ body {
 
 .app-container {
   text-align: center;
-  padding: 20px;
   display: flex;
   flex-direction: column;
 }
-
 .header {
-  padding: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly; 
-}
-
-.icon {
-  height: 5rem;
-  width: 5rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .title {
-  margin: 0;
-  font-size: 2rem;
-  color: #343a40;
-  text-align: left;
+  font-size: 4rem;
+  font-family: 'Pacifico';
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5rem; /* Adjust font size as needed */
+  z-index: 1; /* Ensure text is above image */
 }
 
-.pasta-display {
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  background-color: rgba(104, 104, 124, 0.5); /* Blue semi-transparent overlay */
+}
+
+.artwork {
+  width: 100%;
+  height: auto;
+  z-index: 0; /* Ensure image is below text */
+}
+
+.art-description {
+  position: absolute;
+  bottom: 20px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 12px; /* Adjust font size as needed */
+}
+
+
+.media-display {
   display: flex;
-  flex: 1;
+  flex-direction: column; /* Display children vertically */
 }
 
-.menu-container {
-  width: 70%;
+.options {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: space-between; /* Space between elements */
+}
+
+.main-container {
+  display: flex;
+}
+
+.media-container {
+  flex: 1; /* Occupy remaining space */
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
   gap: 25px; 
-  
+  margin-right: 20px; /* Add margin to separate from sidebar */
 }
 
 .sidebar {
@@ -53,10 +83,7 @@ body {
   height: 100vh;
 }
 
-.title {
-  font-size: 3rem;
-  font-family: 'Pacifico', cursive;
-}
+
 
 .main-container {
   display: flex;
@@ -70,7 +97,7 @@ body {
   align-items: center;
 }
 
-.pasta-display {
+.media-display {
   display: flex;
   flex-direction: column;
 }
@@ -78,4 +105,8 @@ body {
 /* ensures sidebar maintains shape when menu is empty*/
 .menu-container:empty {
   display: flex;
+}
+
+.artwork{
+  height: 30rem;
 }

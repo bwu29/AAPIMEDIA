@@ -2,35 +2,35 @@ import React from 'react';
 import './Dropdown.css';
 import { Dropdown as BootstrapDropdown } from 'react-bootstrap';
 
-function LengthDropdown({ onSelect, selectedLength }) {
+function MediumDropdown({ onSelect, selectedMedium }) {
   return (
-    <BootstrapDropdown onSelect={onSelect} aria-label="Pasta Length Dropdown">
-      <BootstrapDropdown.Toggle variant="success" id="length-dropdown">
-        {selectedLength}
+    <BootstrapDropdown onSelect={onSelect} aria-label="Medium Dropdown">
+      <BootstrapDropdown.Toggle variant="success" id="medium-dropdown">
+        {selectedMedium}
       </BootstrapDropdown.Toggle>
       <BootstrapDropdown.Menu>
         <BootstrapDropdown.Item eventKey="All">All</BootstrapDropdown.Item>
-        <BootstrapDropdown.Item eventKey="Long">Long</BootstrapDropdown.Item>
-        <BootstrapDropdown.Item eventKey="Short">Short</BootstrapDropdown.Item>
+        <BootstrapDropdown.Item eventKey="Book">Book</BootstrapDropdown.Item>
+        <BootstrapDropdown.Item eventKey="Movie">Movie</BootstrapDropdown.Item>
       </BootstrapDropdown.Menu>
     </BootstrapDropdown>
   );
 }
 
-function CategoryDropdown({ onSelect, selectedCategory }) {
+function AgeGroupDropdown({ onSelect, selectedAgeGroup }) {
   return (
-    <BootstrapDropdown onSelect={onSelect} aria-label="Pasta Category Dropdown">
-      <BootstrapDropdown.Toggle variant="success" id="category-dropdown">
-        {selectedCategory}
+    <BootstrapDropdown onSelect={onSelect} aria-label="Age Group Dropdown">
+      <BootstrapDropdown.Toggle variant="success" id="age-group-dropdown">
+        {selectedAgeGroup}
       </BootstrapDropdown.Toggle>
       <BootstrapDropdown.Menu>
         <BootstrapDropdown.Item eventKey="All">All</BootstrapDropdown.Item>
-        <BootstrapDropdown.Item eventKey="Ribbon">Ribbon</BootstrapDropdown.Item>
-        <BootstrapDropdown.Item eventKey="Tube">Tube</BootstrapDropdown.Item>
-        <BootstrapDropdown.Item eventKey="Stuffed">Stuffed</BootstrapDropdown.Item>
+        <BootstrapDropdown.Item eventKey="Children">Children</BootstrapDropdown.Item>
+        <BootstrapDropdown.Item eventKey="Young Adult">Young Adult</BootstrapDropdown.Item>
+        {/* Add other age groups as needed */}
       </BootstrapDropdown.Menu>
     </BootstrapDropdown>
   );
 }
 
-export { LengthDropdown, CategoryDropdown };
+export { MediumDropdown, AgeGroupDropdown };
