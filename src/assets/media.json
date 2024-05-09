@@ -52,15 +52,7 @@
     "description": "Stop-motion animated film about a young boy named Kubo on a quest to find a magical suit of armor.",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/c/c4/Kubo_and_the_Two_Strings_poster.png"
   },
-  {
-    "name": "American Born Chinese",
-    "author": "Gene Luen Yang",
-    "year": "2006",
-    "medium": "Book",
-    "age_group": "Young Adult",
-    "description": "Graphic novel that explores themes of cultural identity and belonging through the stories of three characters.",
-    "image_url": "https://m.media-amazon.com/images/M/MV5BZTVkYWZkMzUtNDM3OS00NWUyLTllNzQtNTdhYTMzODc0N2MwXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg"
-  },
+
   
     {
       "name": "Crying in H Mart",
